@@ -1,13 +1,20 @@
-/* Basic reset */
+/* Basic Reset */
 html {
     box-sizing: border-box;  /* neemt de width en height mee voor het bepalen van de border en padding */
     font-size: 16px;
+    max-width: 960px;
+    margin: auto;
+
 }
   
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
+}
+
+.container {
+    background-color: rgb(177, 148, 148);
 }
   
 ol, ul {
@@ -17,4 +24,20 @@ ol, ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/* Navigation */
+.navigation-bar {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 770px) {
+    .navigation-bar {
+        flex-direction: column;
+        gap: 5px;
+        justify-content: space-between;
+    }
 }
