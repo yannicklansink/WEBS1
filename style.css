@@ -2,7 +2,7 @@
 html {
     box-sizing: border-box;  /* neemt de width en height mee voor het bepalen van de border en padding */
     font-size: 16px;
-    max-width: 960px;
+    max-width: 1100px;
     margin: auto;
 
 }
@@ -15,6 +15,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 .container {
     background-color: rgb(177, 148, 148);
+    padding: 20px;
 }
   
 ol, ul {
@@ -39,5 +40,51 @@ img {
         flex-direction: column;
         gap: 5px;
         justify-content: space-between;
+    }
+}
+
+/* Header */
+.banner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.banner_home {
+    display: grid;
+    grid-gap: 40px;
+
+}
+
+.banner_a {
+
+}
+
+.banner_b {
+
+}
+
+@media (max-width: 770px) {
+    .banner {
+        grid-template-columns: 1fr;
+    }
+    .banner_home {
+        grid-template-columns: 1fr 1fr;    
+    }
+}
+
+/* Sections main */
+.section_sides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    grid-gap: 20px;
+}
+@media (max-width: 540px) {
+    .section_sides {
+        grid-template-columns: 1fr;
     }
 }
