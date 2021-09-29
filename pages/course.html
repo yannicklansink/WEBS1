@@ -6,20 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+   
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/pages/data-science.html">Data Science in Football</a></li>
-                <li><a href="/pages/course.html">Course</a></li>
-                <li><a href="/pages/anaconda.html">Anaconda</a></li>
-                <li><a href="/pages/questions.html">Common Questions</a></li>
-                <li><a href="/pages/data-science-vs-data-analytics.html">Data Science vs Data Analytics</a></li>
-              </ul>
-        </nav>
-    </header>
-    <h1>Course</h1>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="navigation-bar">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/pages/data-science.html">Data Science in Football</a></li>
+                    <li><a href="/pages/course.html">Course</a></li>
+                    <li><a href="/pages/anaconda.html">Anaconda</a></li>
+                    <li><a href="/pages/questions.html">Common Questions</a></li>
+                    <li><a href="/pages/data-science-vs-data-analytics.html">Data Science vs Data Analytics</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Course</h1>
+        <p>Webformulier hier</p>
+
+        <div class="course_banner">
+            <div class="course_item1 course_item">
+                <p>asdfja;lskdfasdf</p>
+            </div>
+            <div class="course_item2 course_item">
+                <p>asdfja;lskdfasdf</p>
+                <img src="/images/Bar-a-Sports-Analytics.jpg" alt="">
+            </div>
+            <div class="course_item3 course_item">
+                <p>asdfja;lskdfasdf</p>
+                <img src="/images/football6.png" alt="">
+            </div>
+            <div class="course_item4 course_item">
+                <p>asdfja;lskdfasdf</p>
+                <img src="/images/Fig7.png" alt="">
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Web form -->
+        <div class="form_container">
+            
+            <form action="/index.html" class="form">
+                <h2>Course Application Form</h2>
+                <div class="form_field">
+                    <label>Name</label>
+                    <input type="text" placeholder="Name" required>
+                </div>
+                <div class="form_field">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form_field">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="form_field">
+                    <label>Birthdate</label>
+                    <input type="date" required>
+                </div>
+                <div class="form_field">
+                    <p>Are you exited?</p>
+                        <label>Yes</label>
+                        <input type="radio" name="same">
+                        <label>No</label>
+                        <input type="radio" name="same">
+               
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <footer>
+            <p>© 2021 Yannick Lansink</p>
+            <p>We Challenge You</p>
+        </footer>
+
+    </div>
 </body>
 </html>
