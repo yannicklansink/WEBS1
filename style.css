@@ -2,8 +2,7 @@
 html {
     box-sizing: border-box;  /* neemt de width en height mee voor het bepalen van de border en padding */
     font-size: 16px;
-    max-width: 1100px;
-    margin: auto;
+    
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -23,6 +22,11 @@ ol, ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
 }
 
 @media (max-width: 780px) {
@@ -91,14 +95,6 @@ footer {
 .banner_home {
     display: grid;
     grid-gap: 40px;
-
-}
-
-.banner_a {
-
-}
-
-.banner_b {
 
 }
 
@@ -220,7 +216,50 @@ footer {
     .course_banner {
         grid-template-columns: 1fr;
     }
+    .course_h1 p {
+        max-width: 80%;
+    }
 }
+
+/* Data Science in Football */
+.main_datascience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    padding-top: 40px;
+}
+
+.datascience_sections {
+    display: flex;
+    flex-flow: column;
+    background: white;
+    padding: 35px;
+}
+
+.container_2 {
+    max-width: 1600px;
+    margin: auto;
+    background-color: rgb(207, 134, 134);
+    padding: 20px;
+}
+
+.datascience_button {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    background: #B0B5C2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.4rem 0 0.3rem;
+}
+
+/* Anaconda */
+
+/* Common Questions */
+
+/* Data science vs Data analytics */
+
 
 
 
