@@ -75,7 +75,7 @@ footer {
     justify-content: space-between;
 }
 
-/* Header */
+/* Home pagina */
 .banner {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -83,7 +83,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 30px 0px 150px 0px;
-    /* min-height: 80vh; */
+    padding: 0px 20px;
 }
 
 .football_here {
@@ -97,6 +97,21 @@ footer {
 
 }
 
+.section_sides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0px 20px;
+}
+
+.bar {
+    background-color: rgb(113, 180, 122);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-align: center;
+}
 @media (max-width: 770px) {
     .banner {
         grid-template-columns: 1fr;
@@ -106,35 +121,54 @@ footer {
     }
 }
 
-/* Sections main */
-.section_sides {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 50px;
-    grid-gap: 20px;
-}
-
-.bar {
-    background-color: rgb(0, 0, 0);
-    padding: 20px;
-    color: white;
-    text-align: center;
-}
-
 @media (max-width: 540px) {
     .section_sides {
         grid-template-columns: 1fr;
+        margin-bottom: 100px;
     }
     .section_sides_order {
         order: 1;
     }
 }
 
-/* Form / course page*/
+/* Data Science in Football */
+.main_datascience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    padding-top: 40px;
+}
+
+.datascience_sections {
+    display: flex;
+    flex-flow: column;
+    background: white;
+    padding: 35px;
+}
+
+.container_2 {
+    max-width: 1600px;
+    margin: auto;
+    background-color: rgb(113, 180, 122);
+    padding: 20px;
+}
+
+.datascience_button {
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    background: #B0B5C2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.4rem 0 0.3rem;
+}
+
+/* Form / course page */
 .course_h1 {
     text-align: center;
     padding: 50px 0px;
-    background-color: rgb(131, 179, 135);
+    background-color: rgb(113, 180, 122);
 }
 
 .course_h1 p {
@@ -184,7 +218,7 @@ footer {
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
-    background-color: rgb(131, 179, 135);
+    background-color: rgb(113, 180, 122);
     padding: 50px;
     margin-bottom: 100px;
 }
@@ -218,39 +252,6 @@ footer {
     .course_h1 p {
         max-width: 80%;
     }
-}
-
-/* Data Science in Football */
-.main_datascience {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 30px;
-    padding-top: 40px;
-}
-
-.datascience_sections {
-    display: flex;
-    flex-flow: column;
-    background: white;
-    padding: 35px;
-}
-
-.container_2 {
-    max-width: 1600px;
-    margin: auto;
-    background-color: rgb(207, 134, 134);
-    padding: 20px;
-}
-
-.datascience_button {
-    display: block;
-    text-align: center;
-    margin-top: auto;
-    background: #B0B5C2;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 0.4rem 0 0.3rem;
 }
 
 /* Anaconda */
@@ -287,9 +288,19 @@ h1 {
     font-size: 16px;
 }
 
+@media (max-width: 1100px) {
+    .img1_anaconda {
+        height: auto;
+    }
+
+    .article_anaconda p, h1 {
+        padding: 0px 20px;
+    }
+}
+
 /* Common Questions */
 .container_questions {
-    background-color: rgb(131, 196, 196);
+    background-color: rgb(113, 180, 122);
 }
 
 .h1_questions {
@@ -353,6 +364,110 @@ hr {
 }
 
 /* Data science vs Data analytics */
+.section_analytics h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.section_analytics {
+    height: 100vh;
+}
+
+.section_analytics1 {
+    background: rgb(207, 89, 21);
+}
+
+.section_analytics2 {
+    background: lightgreen;
+}
+.section_analytics2 .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 200px 20px;
+}
+
+.section_analytics3 {
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.section_analytics4 {
+    background: rgb(89, 180, 196);
+}
+.section_analytics4 .section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 200px 20px;
+}
+
+.section_analytics5 {
+    background: yellow;
+}
+.section_analytics5 .section5 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 200px 20px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid_analytics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 150px 20px;
+    
+
+}
+
+@media (max-width: 780px) {
+    .section_analytics {
+        height: auto;
+    }
+
+    .grid_analytics {
+        grid-template-columns: 1fr;
+        padding: 50px 100px;
+    }
+    .section_analytics3 {
+        padding: 100px 20px;
+    }
+    .section_analytics5 .section5 {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 550px) {
+    .grid_analytics {
+        padding: 50px 50px;
+    }
+}
+
+
+
+
 
 
 
